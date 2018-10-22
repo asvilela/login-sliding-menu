@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'viewlayer-backoffice'`, () => {
+  it(`should have as title 'sliding-menu'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('viewlayer-backoffice');
+    expect(app.title).toEqual('sliding-menu');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to viewlayer-backoffice!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to sliding-menu!');
   });
 });

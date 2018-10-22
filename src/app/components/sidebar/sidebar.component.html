@@ -1,0 +1,30 @@
+<div class="header">
+  <app-navbar></app-navbar>
+</div>
+
+<div id="wrapper" class="content">
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper" class="bg-dark">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a [routerLink]="['home']"><span class="icon home"></span>Home</a>
+      </li>
+      <li>
+        <a [routerLink]="['report']"><span class="icon plus-circle"></span>Cadastrar Laudo</a>
+      </li>
+      <li>
+        <a [routerLink]="['report-search']"><span class="icon search"></span>Pesquisar Laudo</a>
+      </li>
+    </ul>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+</div>

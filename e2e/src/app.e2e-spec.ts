@@ -9,6 +9,6 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to viewlayer-backoffice!');
+    expect(page.getParagraphText()).toEqual('Welcome to Sliding-Menu!');
   });
 });

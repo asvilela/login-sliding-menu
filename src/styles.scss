@@ -1,1 +1,169 @@
 /* You can add global styles to this file, and also import other style files */
+// @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/*****************************************************************************
+- Variables
+******************************************************************************/
+$FONT_SIZE: 14px;
+$FONT_SIZE_HEADER: 16px;
+
+$COLOR_BACKGROUND: #F5F5F5;
+// $COLOR_TEXT: #999999;
+$COLOR_TEXT: #808080;
+$COLOR_RED: #DB0035;
+
+body, html {
+  height: 100%;
+}
+
+body {
+  // font-family: 'Roboto', sans-serif;
+  background-color: $COLOR_BACKGROUND;
+}
+
+
+/*****************************************************************************
+- Icons
+******************************************************************************/
+
+.icon::before {
+  // display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.plus-circle::before {
+  font-family: 'Font Awesome\ 5 Free';
+  content: "\f055";
+}
+
+.search::before {
+  font-family: 'Font Awesome\ 5 Free';
+  content: "\f002";
+}
+
+.bell::before {
+  font-family: 'Font Awesome\ 5 Free';
+  content: "\f0f3";
+}
+
+.home::before {
+  font-family: 'Font Awesome\ 5 Free';
+  content: "\f015";
+}
+
+.share-square::before {
+  font-family: 'Font Awesome\ 5 Free';
+  content: "\f14d";
+}
+
+.grin::before {
+  font-family: 'Font Awesome\ 5 Free';
+  content: "\f580";
+}
+
+.undo::before {
+  font-family: 'Font Awesome\ 5 Free';
+  content: "\f0e2";
+}
+
+.save::before {
+  font-family: 'Font Awesome\ 5 Free';
+  content: "\f0c7";
+}
+
+.file-pdf::before {
+  font-family: 'Font Awesome\ 5 Free';
+  content: "\f1c1";
+}
+
+.cloud-upload-alt::before {
+  font-family: 'Font Awesome\ 5 Free';
+  content: "\f382";
+}
+
+.file-upload::before {
+  font-family: 'Font Awesome\ 5 Free';
+  content: "\f574";
+}
+
+.trash-alt::before {
+  font-family: 'Font Awesome\ 5 Free';
+  content: "\f2ed";
+}
+
+.trash::before {
+  font-family: 'Font Awesome\ 5 Free';
+  content: "\f1f8";
+}
+
+.minus-circle::before {
+  font-family: 'Font Awesome\ 5 Free';
+  content: "\f056";
+}
+
+.pen::before {
+  font-family: 'Font Awesome\ 5 Free';
+  content: "\f304";
+}
+
+/*****************************************************************************
+- Rules
+******************************************************************************/
+@media (max-width: 767px)
+{
+  .btn-mobile {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .div-search {
+    margin-top: 0px !important;
+  }
+}
+
+/*****************************************************************************
+- Global Class
+******************************************************************************/
+.panel {
+  padding: 15px 10px 15px 10px;
+}
+
+label {
+  font-size: $FONT_SIZE;
+  color: $COLOR_TEXT;
+}
+
+input[type=text] {
+  font-size: $FONT_SIZE;
+}
+
+button {
+  margin-right: 5px;
+}
+
+.div-search {
+  margin-top: 35px;
+}
+
+td {
+  padding: 5px !important;
+  font-size: $FONT_SIZE;
+  color: $COLOR_TEXT;
+}
+
+.col-action {
+  width: 90px;
+  align-content: left;
+}
+
+th {
+  padding: 10px 5px 10px 5px !important;
+  font-size: $FONT_SIZE_HEADER;
+  color: $COLOR_TEXT;
+}
+
+h3 {
+  color: $COLOR_TEXT;
+}
